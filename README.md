@@ -10,24 +10,6 @@ Use Airbnb's [javascript code style guide](https://github.com/airbnb/javascript)
 $ make run
 ```
 
-### 代码检查
-
-```
-$ make lint
-```
-
-### 代码编译
-
-```
-$ make build
-```
-
-### 代码转移到mock-server-koa2(需要编辑自己的文件路径)
-
-```
-$ make real
-```
-
 ### 涉及技术栈
 
   * react  
