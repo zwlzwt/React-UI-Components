@@ -1,0 +1,45 @@
+.auto-complete {
+  position: relative;
+  padding: 20px 0;
+
+  &.focus {
+    
+    .auto-complete-suggetions{
+      max-height: 45vh;
+      visibility: visible;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, .12),
+      0 1px 4px rgba(0, 0, 0, .24);
+    }
+  }
+
+  .auto-complete-suggetions {
+    position: absolute;
+    top: 80px;
+    z-index: 100;
+    width: 100%;
+    max-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    -webkit-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+            transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    -webkit-transition-duration: .35s;
+            transition-duration: .35s;
+    -webkit-transition-property: max-height, box-shadow;
+    transition-property: max-height, box-shadow;
+
+    .auto-complete-suggetions-item {
+      cursor: pointer;
+      font-size: 20px;
+      padding: 15px;
+      list-style: none;
+
+      &.active {
+        background-color: #eee;
+      }
+    }
+  }
+}

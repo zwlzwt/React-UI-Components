@@ -1,0 +1,30 @@
+.calendar-month-wrap {
+  display: flex;
+  flex-direction: column;
+  color: #757575;
+
+  .calendar-month-title {
+    display: inline-block;
+    margin: 0 auto;
+    font-weight: 500;
+  }
+
+  .calendar-month-weeks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: 500;
+    line-height: 36px;
+    opacity: 0.5;
+    text-align: center;
+
+    .calendar-month-week-item {
+      flex: 0 0 calc(100% / 7);
+    }
+  }
+
+  .calendar-month-days {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

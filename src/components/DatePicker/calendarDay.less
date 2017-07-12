@@ -1,0 +1,28 @@
+.calendar-day {
+  flex: 0 0 calc(100% / 7);
+  text-align: center;
+  padding: 5px 0;
+  line-height: 36px;
+
+  .day-item {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &.active {
+      background: rgb(0, 151, 167);
+      color: #fff;
+    }
+
+    &.disabled {
+      opacity: .25;
+      pointer-events: none;
+    }
+
+    &:hover {
+      background: rgba(0, 151, 167, .3);
+    }
+  }
+}
