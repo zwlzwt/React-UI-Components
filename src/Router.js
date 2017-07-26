@@ -9,7 +9,7 @@ export default function App() {
   return (
     <Router>
       <Wrap>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/components" component={Home} />
       </Wrap>
     </Router>
   )

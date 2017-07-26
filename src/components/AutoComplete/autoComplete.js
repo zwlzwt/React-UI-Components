@@ -50,11 +50,11 @@ class Autocomplete extends Component {
     focus: false,
   }
 
-  // componentWillReceiveProps(nextProps) {
-  //   if (nextProps.value !== this.props.value) {
-  //     this.setState({query: nextProps.value})
-  //   }
-  // }
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.value !== this.props.value) {
+      this.setState({query: nextProps.value})
+    }
+  }
 
   source() {
     const { source:data } = this.props
