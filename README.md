@@ -10,6 +10,10 @@ Use Airbnb's [javascript code style guide](https://github.com/airbnb/javascript)
 $ make run
 ```
 
+### 测试框架jest
+
+测试用例稍后会补上
+
 ### 涉及技术栈
 
   * react  
