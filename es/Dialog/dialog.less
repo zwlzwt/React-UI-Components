@@ -1,0 +1,44 @@
+.dialog-style {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 19px 60px rgba(0,0,0,.3), 0 15px 20px rgba(0,0,0,.22);
+  width: 40vw;
+  max-width: 96vw;
+  max-height: 96vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 200;
+
+  .dialog-body {
+    padding: 25px;
+    color: #757575;
+
+    .dialog-title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1;
+      margin-bottom: 15px;
+      color: #000;
+
+      &.warning {
+        color: #FFDE56;
+      }
+
+      &.alert {
+        color: #F82831;
+      }
+
+      &.success {
+        color: #86D6A4;
+      }
+    }
+  }
+
+  .dialog-navi {
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    padding: 15px;
+    text-align: right;
+  }
+}

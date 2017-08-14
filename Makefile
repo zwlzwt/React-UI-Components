@@ -4,7 +4,7 @@ run:
 	@node server.js
 .PHONY: run
 
-lint:
+lint:n
 	@$(BIN)/eslint --config eslint.json src webpack.config.js server.js
 .PHONY: lint
 
@@ -22,6 +22,12 @@ real: build
 		@echo
 		@echo Done!
 .PHONY: real
+
+build-es:
+	@rm -fr es
+	@$(BIN)/babel --no-babelrc src/components --out-dir es --ignore *.test.js --plugins=transform-object-rest-spread,transform-es2015-spread --presets=es2015,react,stage-2
+	@cp -Rn src/components/ es/
+.PHONY: build-es
 
 copy: build
 	@echo

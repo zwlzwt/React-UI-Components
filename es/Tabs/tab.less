@@ -1,0 +1,31 @@
+.tab {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  color: rgba(255, 255, 255, 0.701961);
+  width: 50%;
+  text-transform: uppercase;
+  background: none;
+  text-align: center;
+  padding: 15px 0;
+
+  &.disabled {
+    opacity: .4;
+  }
+
+  &.hidden {
+    display: none;
+  }
+
+  &:not(.disabled) {
+    cursor: pointer;
+  }
+
+  &.active {
+    color: #fff;
+  }
+
+}

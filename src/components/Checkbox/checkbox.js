@@ -4,7 +4,7 @@
 // @param  disabled            Boolean             false            禁用input框和input原生的disabled一致
 // @param  checked             Boolean             false            被选中状态
 // @param  label               String或者node                        label名字或者自己定义dom结构
-// @param  onChange            Func                                 第一个参数是value 是否被选中状态bool 
+// @param  onChange            Func                                 第一个参数是value 是否被选中状态bool
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'

@@ -1,0 +1,80 @@
+.select-field {
+  position: relative;
+  cursor: pointer;
+
+  &.active {
+
+    .options {
+      max-height: 45vh;
+      visibility: visible;
+    }
+  }
+
+  // 给input组建添加样式
+  .selectInput {
+    cursor: pointer;
+    z-index: 2;
+
+    .disappear {
+      width: 0;
+    }
+  }
+
+  // 箭头样式
+  .select-arrow {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    color: rgba(0, 0, 0, 0.470588);
+    height: 24px;
+    width: 24px;
+    user-select: none;
+  }
+
+  .options {
+    position: absolute;
+    top: 2px;
+    z-index: 100;
+    width: 100%;
+    overflow-y: auto;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    visibility: hidden;
+    box-shadow: 0 1px 6px rgba(0,0,0,.12), 0 1px 4px rgba(0,0,0,.24);
+    -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    -webkit-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-property: max-height,box-shadow;
+    transition-property: max-height,box-shadow;
+
+    .options-item {
+      position: relative;
+      padding: 8px;
+      font-size: 15px;
+      overflow: hidden;
+      cursor: pointer;
+
+      &.seleced {
+        color: rgb(255, 64, 129);
+      }
+
+      &.disabled {
+        color: rgba(0,0,0,.26);
+        cursor: not-allowed;
+      }
+      &:not(.disabled):hover {
+        background-color: #eee;
+      }
+    }
+
+    input {
+      cursor: pointer;
+    }
+  }
+}
