@@ -1,6 +1,6 @@
 {
-  "name": "react-puzzle",
-  "version": "0.8.4",
+  "name": "react-puzzle-cell",
+  "version": "0.8.1",
   "description": "A set of React components.",
   "author": {
     "email": "339842263zwl@gmail.com",
