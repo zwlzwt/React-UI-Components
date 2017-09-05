@@ -110,6 +110,14 @@ const TooltipFactory = (ComposedComponent) => {
         onMouseLeave: this.handleMouseLeave,
       }
 
+      const styleInsert = {
+        position: 'absolute',
+        display: 'block',
+        top: '-50px',
+        height: 'auto',
+        width: 'auto',
+      }
+
       return React.createElement(
         ComposedComponent,
         childProps,
@@ -117,7 +125,7 @@ const TooltipFactory = (ComposedComponent) => {
         visible &&
         <Portal
           active={active}
-          _className='wrap-reset'
+          _className={styleInsert}
           >
           <span
             ref={(node) => { this.tooltipNode = node }}

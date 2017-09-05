@@ -130,4 +130,13 @@ Object.defineProperty(exports, 'Upload', {
   }
 });
 
+var _Pagination = require('./Pagination');
+
+Object.defineProperty(exports, 'Pagination', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_Pagination).default;
+  }
+});
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

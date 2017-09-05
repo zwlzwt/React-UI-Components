@@ -2,7 +2,7 @@
 
 ### 使用方式
 ```bash
-npm install --save zcm-ui-design
+npm install --save react-puzzle-cell
 ```
 
 ### 设置less编译在webpack中

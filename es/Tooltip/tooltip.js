@@ -144,11 +144,19 @@ var TooltipFactory = function TooltipFactory(ComposedComponent) {
           onMouseLeave: this.handleMouseLeave
         });
 
+        var styleInsert = {
+          position: 'absolute',
+          display: 'block',
+          top: '-50px',
+          height: 'auto',
+          width: 'auto'
+        };
+
         return _react2.default.createElement(ComposedComponent, childProps, children, visible && _react2.default.createElement(
           _portal2.default,
           {
             active: active,
-            _className: 'wrap-reset'
+            _className: styleInsert
           },
           _react2.default.createElement(
             'span',

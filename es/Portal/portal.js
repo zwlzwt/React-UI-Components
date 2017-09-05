@@ -16,10 +16,6 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _classnames = require('classnames');
-
-var _classnames2 = _interopRequireDefault(_classnames);
-
 require('./portal.less');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -27,7 +23,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Portal = function Portal(props) {
   return props.active ? _react2.default.createElement(
     'div',
-    { className: (0, _classnames2.default)('portal-style', props._className) },
+    { className: 'portal-style', style: props._className },
     props.children
   ) : null;
 };
